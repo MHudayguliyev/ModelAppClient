@@ -1,0 +1,162 @@
+@use '../../styles/globalStyles.scss';
+@use '../../styles/globalBreakpoints.scss' as *;
+@use '../../styles/globalTypography.scss' as *;
+
+// @media screen and (max-width: $table) {
+//     .bars {
+
+//     }    
+// }
+
+// .responsive {
+//     border: 1px solid red;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     display: none;
+// }
+
+.nav {
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    user-select: none;
+
+    // @media screen and (max-width: $tablet) {
+    //     .logoStuff, .authList {
+    //         visibility: hidden;
+    //         display: none;
+    //     }
+    //     ul {
+    //         display: grid;
+    //         grid-template-columns: repeat(2, minmax(200px, 1fr));
+    //     }
+
+    //     .responsive, .bars {
+    //         display: block;
+    //     }
+    //     .responsive {
+    //         display: flex;
+    //         justify-content: flex-end;
+    //         align-items: flex-end;
+    //     }
+
+    // }
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: grid;
+    gap: 3px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto;
+    align-items: center;
+  }
+  
+  .nav ul .pageLists {
+    display: flex;
+    padding: 10px;
+  }
+  
+  .pageLists li {
+    padding: 5px;
+  }
+  
+  .pageLists li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  
+  /* logo stuff */
+  
+  .nav ul .logoStuff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logoStuff .navbarLogo {
+    font-size: 50px;
+    padding: 3px;
+    margin-bottom: 5px;
+  }
+  
+//   .authLists {
+//     display: flex;
+//     justify-content: space-between;
+//     border: 1px solid red;
+//   }
+  
+  .nav ul .authLists .authList {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    position: relative;
+  }
+
+//   .bars, .close {
+//     display: none;
+//     font-size: $fontSizeBig;
+//     font-weight: $fontWeightRegular;
+//   }
+  
+  .authList li {
+    padding: 5px;
+  }
+  
+  .authList li .uploadBtn, .cart {
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+  .authList li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  
+  .authList .localeIcon {
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+  .authLists .languages {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 3rem;
+    right: .7em;
+    transition: 0.5s ease-in;
+    padding: 5px 0;
+    border: 2px solid rgba(0, 0, 0, 0.21);
+    border-radius: .2em;
+    background-color: whitesmoke;
+    color: grey;
+    width: 5rem;
+    padding: 5px;
+    z-index: 1;
+  }
+  
+  .languages .langList {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.21);
+    width: 100%
+  }
+  
+  .languages .langLabel {
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+  
+  .languages .langIcon {
+    width: 2rem;
+    padding: 2px 0;
+  }
+  
+  

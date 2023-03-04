@@ -1,0 +1,60 @@
+/* .icon-content {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    margin-top: 4rem;
+    border-bottom: 1px solid #404040;
+}
+
+.icon-content .icon {
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+
+.icon-content .icon .i {
+    padding: 10px;
+    margin: 0 0 0 5px ;
+} */
+
+.categoriesSection {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    border-top: 1px solid rgb(230, 227, 227);
+    border-bottom: 1px solid rgb(230, 227, 227);
+}
+
+.categoriesSection .icon {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.categoryIcon {
+    width: 30px;
+    height: 30px
+}
+
+.clearFilterContainer {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.clearFilterIcon {
+    color: #b10000
+} 
+
+.clearFilterContainer .clearFilterIcon:hover {
+    color: #ce2200;
+}
+
+.focus {
+    opacity: 0.5;
+}

@@ -1,0 +1,8 @@
+select {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font: normal 16px Arial, Sans-Serif;
+    color: black;
+    border: 1px solid #ccc;
+  }

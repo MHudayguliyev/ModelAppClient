@@ -1,0 +1,63 @@
+:root {
+    --primary-color: rgb(255, 128, 0);
+    --main-color-red: #fb0b12;
+    --second-color-red: #ff3e4e;
+    --main-modal-bg:whitesmoke;
+    --main-active-card: whitesmoke;
+    --main-border-color: rgba(0, 0, 0, 0.21);
+    --txt-white: white;
+    --icon-black-active: black;
+    --border-radius: .2em;
+    --box-shadow: 0px 2px 11px 1px #d1d1d1;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+ }
+
+ ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+ 
+ body {
+    font-family: "Nunito", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.7px;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    overflow-y: overlay;
+    overflow-x: hidden;
+    margin: 0;
+    &::-webkit-scrollbar {
+      width: 8px;
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar-track {
+      right: 5px;
+      border-radius: 5px;
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar-track-piece {
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+    }
+ }

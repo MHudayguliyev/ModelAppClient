@@ -1,0 +1,13 @@
+{
+    "upload": "upload",
+    "logout": "logout",
+    "notFound": "No data found",
+    "requiredField": "This field is required",
+    "username": "Username should contain at least 3 characters",
+    "password": "Password should contain at least 3 characters",
+    "sure": "Are you sure",
+    "deleteTxt": "Delete",
+    "cancelTxt": "Cancel",
+    "yes": "Yes",
+    "no": "No"
+}

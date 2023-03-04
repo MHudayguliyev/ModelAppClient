@@ -1,0 +1,39 @@
+.search-container {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.theGlobalSearchForm {
+  position: relative;
+}
+
+.global-search {
+    padding: 10px;
+    box-sizing: border-box;
+    outline-color: #ccc;
+    cursor: pointer;
+    width: 90%;
+    border: 2px solid #dadada;
+    outline:rgba(104, 102, 102, 0.6);
+    font-size: 18px;
+    border-radius: 12px;
+    color: whitesmoke;
+    background-color: inherit;
+}
+
+.global-search::placeholder {
+  color: whitesmoke
+}
+
+.search-container .globalSearchIcon {
+  /* border: 1px solid red; */
+  position: absolute;
+  right: 2rem;
+  top: .3em;
+  font-size: 26px;
+  font-weight: bold;
+  color: whitesmoke;
+  cursor: pointer;
+}
+

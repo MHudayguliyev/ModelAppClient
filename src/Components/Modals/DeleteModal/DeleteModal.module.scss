@@ -1,0 +1,18 @@
+@use '../../../styles/globalTypography.scss' as Typography;
+
+.container {
+    width: 25%;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+    &.headerTxt {
+        font-size: Typography.$fontSizeBig;
+    }
+}
+.btnGroup {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}

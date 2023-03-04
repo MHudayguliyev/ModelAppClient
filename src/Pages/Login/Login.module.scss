@@ -1,0 +1,74 @@
+@use '../../styles//globalStyles.scss';
+
+.form {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    box-shadow: var(--box-shadow);
+    border-radius: var(--radius);
+    padding: 20px;
+    // text-align: center;
+    width: 25rem;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+.person {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.body .username, .password {
+    // border: 1px solid red;
+}
+
+.inputValue {
+    border: 2px solid #dadada;
+    outline:rgba(104, 102, 102, 0.6);
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    border-radius: var(--radius);
+    width: 100%
+}
+
+.inputValue:focus {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+.loginBtn {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: var(--radius);
+}
+
+.requiredField {
+    color: var(--main-color-red);
+    margin: 5px 0
+}

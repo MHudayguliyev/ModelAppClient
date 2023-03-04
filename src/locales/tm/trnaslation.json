@@ -1,0 +1,14 @@
+{
+    "upload": "ýüklemek",
+    "logout": "çykmak",
+    "notFound": "Hiç hili maglumat tapylmady",
+    "requiredField": "Hökman dolurylmaly",
+    "username": "Ulanyjy ady azyndan 3 simwoldan ybarat bolmaly",
+    "password": "Parol azyndan 3 simwoldan ybarat bolmaly",
+    "sure": "Son kararynyzmy?",
+    "deleteTxt": "Öçür",
+    "cancelTxt": "Yza",
+    "yes": "Hawa",
+    "no": "Ýok"
+
+}

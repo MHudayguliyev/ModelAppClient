@@ -1,0 +1,125 @@
+@use '../../styles/globalStyles.scss';
+@use '../../styles/globalTypography.scss' as *;
+
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    padding: 10px;
+}
+
+.notFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.notFound .noModelFoundIcon {
+    width: 10rem
+}
+
+.container {
+    border: 1px solid var(--main-modal-bg);
+    border-radius: var(--border-radius);
+    background-color: white;
+    margin: 16px 16px 0 16px;
+    padding: 5px;
+    box-shadow: var(--box-shadow);    
+}
+
+.recomendationModels {
+    border: 1px solid var(--main-modal-bg);
+    border-radius: var(--border-radius);
+    background-color: white;
+    margin: 19px 16px 0 16px;
+    padding: 5px;
+    box-shadow: var(--box-shadow);   
+}
+
+.categoryName {
+    font-size: 22px;
+    font-weight: $fontWeightBold;
+    margin-left: 5px;
+}
+
+.modelItself {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 6px;
+}
+
+.imageContainer {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    border: var(--border-radius)
+}
+
+.image {
+    width: 350px;
+    height: 350px
+}
+
+.heart {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 6px; 
+    right: 10px;
+}
+
+.modelInfoContent {
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.modelName {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: $fontWeightBold;
+
+}
+
+.formats {
+    display: flex;
+    font-size: $fontSizeMedium;
+}
+
+.formats .format {
+    padding: 6px 6px 6px 0;
+}
+
+.class {
+    padding: 6px 6px 6px 0;
+    font-size: 20px;
+    font-weight: $fontWeightRegular;
+    color: var(--primary-color);  
+}
+
+.desc {
+    padding: 6px 6px 6px 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #6E798C;
+}
+
+.download {
+    text-decoration: none;
+    color: white;
+}

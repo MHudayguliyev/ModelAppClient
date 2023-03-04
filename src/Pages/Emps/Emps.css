@@ -1,0 +1,109 @@
+.emp-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 12px
+    /* border: 1px solid red; */
+}
+.emp_card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 19.5%;
+    margin: 4px;
+    flex-shrink: 0;
+    height: 500px;
+    border-radius: 1.5rem;
+}
+
+.emp_card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.img_div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 25px  0;
+    background-color: #6886f2;
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.img_div .avatar {
+    width: 60%;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    border: 3px solid  #6886f2;
+    outline:  3px solid white;
+    transition: 1s ease-in-out;
+}
+
+.img_div .avatar:hover {
+    width: 95%;
+    height: 500px;
+    padding: 0;
+    margin-top: -20px;
+    border-radius: 2rem;
+    outline: none;
+    border: none
+}
+
+.img_div .avatar:hover > .img_div_span h4, p {
+    display: none;
+    
+}
+
+.img_div::after {
+    display: block;
+    content: '';
+    width: 200px;
+    height: 200px;
+    background-color: #6886f2;
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    z-index: -4;
+}
+
+.img_div_span {
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    width: 100%;
+    border-top-right-radius: 2rem;
+    padding: 20px;
+    text-align: center;
+    height: 250px;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 70px;
+}
+
+
+
+
+.img_div_span h4 {
+    font-size: 28px;
+    color: rgb(60, 60, 60);
+
+}
+
+.img_div_span .p {
+    font-size: 15px;
+    color: rgb(140, 140, 140);
+}
+
+
+@media (max-width: 800px){
+    .emp-section {
+        flex-direction: column;
+    }
+}

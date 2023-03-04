@@ -1,0 +1,49 @@
+.adminModels {
+    margin: 16px 10px 0 10px;
+}
+
+.adminDataNotFound {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96vh
+}
+
+.adminDataNotFound .adminNoModelFoundIcon {
+    width: 10rem
+}
+
+.adminPreloader {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96vh
+}
+
+.notFound {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.notFound .icon {
+    width: 5rem;
+    height: 5rem;
+}
+
+.notFound .text {
+    margin-top: 10px;
+    font-size: 19px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+    margin-right: 10px;
+    padding: 6px;
+}

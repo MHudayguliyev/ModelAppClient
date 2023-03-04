@@ -1,0 +1,146 @@
+@use '../../styles//globalStyles.scss';
+
+.uploadForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+.uploadForm .uploadContent {
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    width: 25vw;
+    min-height: 25vh;
+}
+
+
+.classSelection,.categorySelection {
+    margin: 0 0 5px 0;
+}
+
+.uploadSelectClasses {
+    margin-bottom: 5px
+}
+
+.inputValue {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: var(--border-radius);
+    width: 100%;
+    margin: 5px 0 0 0;
+}
+
+.inputValue:focus {
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+
+.uploadForm .uploadContent .choice {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 0; 
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+}
+
+.uploadContent .modelDesc {
+    margin: 0 0 5px 0;
+    border-radius: var(--border-radius);
+}
+
+
+.uploadContent .filePreview {
+    height: auto;   
+    margin: 10px 0;
+}
+
+.filePreview .notFileSelectedYet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 25vh;
+}
+
+.filePreview .imagePreviewContainer {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 5px;
+    border: 1px solid var(--main-color-red);
+    border-radius: var(--border-radius);
+}
+
+.filePreview .imagePreviewContainer .imagePreview {
+    height: 20vh;
+    padding: 10px;
+    object-fit:contain;
+}
+
+
+.trashIcon {
+    font-size: 22px;
+    padding: 10px;
+    cursor: pointer;
+    color: var(--main-color-red);
+}
+
+.zipPreview {
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    border: 1px solid var(--main-color-red);
+    border-radius: var(--border-radius)
+}
+
+.zipTrash {
+    font-size: 22px;
+    margin-top: 5px;
+    padding: 10px;
+    color: var(--main-color-red);
+    cursor: pointer
+}
+
+.invisible {
+    display: none;
+}
+
+.fadeLabel {
+    opacity: 0.7;
+    cursor: none;
+}
+
+
+/* media queries */
+@media screen and (max-width: 1200px) {
+    .uploadForm .uploadContent {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .uploadForm .uploadContent {
+        width: 100vw;
+    }
+}
+
+
+
+
